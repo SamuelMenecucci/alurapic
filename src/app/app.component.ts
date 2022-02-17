@@ -14,6 +14,7 @@ import { Component } from "@angular/core";
 //um componente em angular é uma classe, e a convenção para o nome da classe é PascalCase
 export class AppComponent {
   //aqui criamos uma propriedade chamada title, description e url, e dentro do html do componente, conseguimos acessar essas propriedades.
+  //as propriedades são chamadas no htlm do próprio componente
   title = "alurapic";
   description = "Leão";
   url =
