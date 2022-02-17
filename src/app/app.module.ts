@@ -3,9 +3,9 @@
 //por convenção, deixarei todos os imports que é feito pelo angular
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
+import { AppComponent } from "./app.component";
 
 //depois todos os imports feito por mim
-import { AppComponent } from "./app.component";
 //importo o componente que criei e coloco ele em declarations
 import { PhotoComponent } from "./photo/photo.component";
 
