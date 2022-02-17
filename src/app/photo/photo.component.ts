@@ -14,6 +14,7 @@ import { Component } from "@angular/core";
 
 //um componente em angular é  uma classe e a convenção para o nome da classe é PascalCase
 export class PhotoComponent {
+  //essas propriedade são chamadas dentro do html do próprio componente
   description = "Dragão";
   url =
     "https://img.elo7.com.br/product/zoom/26B13B5/painel-de-festa-dragao-2-dragao.jpg";
