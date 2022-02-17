@@ -1,7 +1,7 @@
 //o componente em angular sempre é um arquivo ts, nomeado nomeDoComponente.component.ts
 
 //sempre que formos criar um componente,, precisamos importar o Component do angular/core
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 
 @Component({
   //o selector é o nome do componente que eu irei chamar quando eu quiser utiliza-lo
@@ -15,7 +15,8 @@ import { Component } from "@angular/core";
 //um componente em angular é  uma classe e a convenção para o nome da classe é PascalCase
 export class PhotoComponent {
   //essas propriedade são chamadas dentro do html do próprio componente
-  description = "Dragão";
-  url =
-    "https://img.elo7.com.br/product/zoom/26B13B5/painel-de-festa-dragao-2-dragao.jpg";
+
+  //para passar os valores dessas propriedades por atributos do componente no arquivo htlm, preciso colocar o @input()
+  @Input() description = "";
+  @Input() url = "";
 }
