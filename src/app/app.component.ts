@@ -15,4 +15,15 @@ import { Component } from "@angular/core";
 export class AppComponent {
   //as propriedades são chamadas no htlm do próprio componente
   title = "alurapic";
+
+  photos = [
+    {
+      url: "https://img.elo7.com.br/product/zoom/26B13B5/painel-de-festa-dragao-2-dragao.jpg",
+      description: "",
+    },
+    {
+      url: "https://img.elo7.com.br/product/original/26B13A2/painel-de-festa-dragao-como-treinar-seu-dragao.jpg",
+      description: "",
+    },
+  ];
 }

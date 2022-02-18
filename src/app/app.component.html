@@ -3,11 +3,14 @@
 
 <!-- chamando o componente ap-photo -->
 <!-- essas propriedades estão declaradas no componente, e consigo passar elas pois configurei com o @input no componente -->
+<!-- O angular possui um recurso chamado diretiva. Uma diretiva pode mudar um comportamento de um componente já existente. no angular existe a diretiva *ngFor
+dentro do nosso componente, na classe, temos uma propriedade chamada photos, que é um array de objetos. consigo iterar sobre o photos passando ele para o ngFor
+possui o mesmo principio do for of.
+lembrando que para receber o valor da propriedade do componente, o atributo precisa do data binding [], pois se não tiver ele irá entender o valor como uma string apenas. 
+-->
+
 <ap-photo
-  url="https://img.elo7.com.br/product/zoom/26B13B5/painel-de-festa-dragao-2-dragao.jpg"
-  description=""
-></ap-photo>
-<ap-photo
-  url="https://img.elo7.com.br/product/original/26B13A2/painel-de-festa-dragao-como-treinar-seu-dragao.jpg"
-  description=""
+  *ngFor="let photo of photos"
+  [url]="photo.url"
+  [description]=""
 ></ap-photo>
