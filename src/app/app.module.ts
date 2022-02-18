@@ -4,15 +4,15 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { AppComponent } from "./app.component";
-
-//depois todos os imports feito por mim
-//importo o componente que criei e coloco ele em declarations
-import { PhotoComponent } from "./photo/photo.component";
+import { PhotosModules } from "./photos/photos.module";
 
 @NgModule({
   //dentro de declarations, colocamos os componentes que iremos usar na aplicação.
-  declarations: [AppComponent, PhotoComponent],
-  imports: [BrowserModule],
+  declarations: [AppComponent],
+
+  //imports é aonde eu importo módulos.
+  //importo o PhotosModules que é aonde está encapsulado os componentes que são pertinentes a um determinado conceito.
+  imports: [BrowserModule, PhotosModules],
   providers: [],
   bootstrap: [AppComponent],
 })
